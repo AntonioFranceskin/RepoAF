@@ -7,7 +7,7 @@ include Utilities
 # Programa Lector de Noticia  
 # Autor Antonio Franceskin
 # Fecha 31/Mar/2017
-#
+#asdvasdvasdvasdvasdv;oaldbcclkadbcdbjc
 # Estructuras de almacenamiento de  Noticias Store es  una  matriz  original  y Store es la matriz Ordenada por  Fecha
 total_numof_notice = 0
 store = []
