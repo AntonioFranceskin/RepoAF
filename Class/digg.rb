@@ -8,8 +8,8 @@ class Digg
 def digggets(store,k)
 begin
      r = RestClient.get 'http://digg.com/api/news/popular.json'
-rescue RestClient::ExceptionWithResponse => e
-     e.response
+		rescue RestClient::ExceptionWithResponse => e
+     		e.response
 end
 link = JSON.parse(r.body)
  for  i  in  0..link["data"]["feed"].length-1 

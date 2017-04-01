@@ -7,8 +7,8 @@ class Mashable
 def mashablegets(store,k)
 begin
      r = RestClient.get 'http://mashable.com/stories.json'
-rescue RestClient::ExceptionWithResponse => e
-     e.response
+        rescue RestClient::ExceptionWithResponse => e
+            e.response
 end
 link = JSON.parse(r.body)
     for i  in  0..link["new"].length-1

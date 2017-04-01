@@ -6,8 +6,8 @@ class Reddit
 def redditgets(store,k)
 begin
      r  = RestClient.get 'https://www.reddit.com/.json'
-rescue RestClient::ExceptionWithResponse => e
-     e.response
+        rescue RestClient::ExceptionWithResponse => e
+            e.response
 end     
  link = JSON.parse(r.body)
    for  i  in  0..link["data"]["children"].length-1
