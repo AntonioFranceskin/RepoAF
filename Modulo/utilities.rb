@@ -106,12 +106,10 @@ end
 					system("clear")
 					puts  " "
 					print  " N O T I C I A S   D E L  P R O V E E D O R:  ".blue.blink.underline 
-					print  "#{rss}".red.blink.underline 
-					puts  "".uncolorize	 
-					puts  "".uncolorize	
-					print  " P A G I N A  No. :  ".blue.blink.underline 
+					print  "#{rss}".red.blink.underline  
+					print  "            P A G I N A  No. :  ".blue.blink.underline 
 					print  "#{page_number}".red.blink.underline 
-					puts   " "
+					puts  "".uncolorize	
 					noagain = false
 				end
 				if (store[i][4] == rss  || rss == "All")  then
