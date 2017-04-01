@@ -104,14 +104,14 @@ end
 			for  i  in  0..store.length-1 
 				if counter == 0 && noagain then
 					system("clear")
-					puts  "".uncolorize
+					puts  " "
 					print  " N O T I C I A S   D E L  P R O V E E D O R:  ".blue.blink.underline 
 					print  "#{rss}".red.blink.underline 
 					puts  "".uncolorize	 
 					puts  "".uncolorize	
 					print  " P A G I N A  No. :  ".blue.blink.underline 
 					print  "#{page_number}".red.blink.underline 
-					puts	
+					puts   " "
 					noagain = false
 				end
 				if (store[i][4] == rss  || rss == "All")  then
@@ -135,8 +135,16 @@ end
 						counter = 0
 						noagain = true
 						if ((search_url == 1) && (page_number == page)) then
-							puts "indique  el  numero de linea  a desplegar en el Navegador"	
-							getline = gets.chomp.to_i
+							cycle1 = true
+							while cycle1 do
+								puts "indique  el  numero de linea  a desplegar en el Navegador"	
+								getline = gets.chomp.to_i
+								if getline > 0 && getline < 8 then
+								   cycle1 = false
+								else
+								   puts "Tiene que seleccionar un digito entre 1  y 7"
+								end   
+							end	
 							posicion =  mostrar[getline-1]
 							load_url = store[posicion][2]				
 							system("clear")
