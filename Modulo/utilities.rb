@@ -70,7 +70,7 @@ def selection(store)
 				when 5 then
 					puts "Ingrese  el Proveedor (Reddit, Mashable, Digg o All)".colorize( :background => :blue)
 					rss = gets.chomp
-					puts "Buscar el URL en la Pagina  ".colorize( :background => :blue)
+					puts "Buscar el URL en la Pagina (Coloque All para buscar su pagina) ".colorize( :background => :blue)
 					getpage = gets.chomp
 					get_url = rss_view(store,rss,getpage,1)
 					if get_url.class != Range
