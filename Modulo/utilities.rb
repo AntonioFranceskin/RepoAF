@@ -137,7 +137,7 @@ end
 						if ((search_url == 1) && (page_number == page)) then
 							cycle1 = true
 							while cycle1 do
-								puts "indique  el  numero de linea  a desplegar en el Navegador"	
+								puts "indique  el  numero de linea (1 al 7) a desplegar en el Navegador "	
 								getline = gets.chomp.to_i
 								if getline > 0 && getline < 8 then
 								   cycle1 = false
